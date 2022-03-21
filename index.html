@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./logic.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖊Etch a sketch</title>
+</head>
+
+<body>
+    <BODY ondragstart="return false;" ondrop="return false;"></BODY>
+    
+    <div class="main-container">
+        <div class="title">Etch a Sketch Project</div>
+        <div class="sketch-container">
+            <div class="container">
+                <div class="sketch-outline">
+                    <div class="sketch"></div>
+                </div>
+                
+                <div class="settings">
+                    <label><input type="color" id="colorPalette" value="#00ffff"></label>
+                    <button class="normal" data-mode="normal">Normal mode</button>
+                    <button class="rainbow" data-mode="rainbow">Rainbow Mode</button>
+                    <button class="clear">Clear Sketch</button>
+                    <div class="slider-container">16 ✗ 16</div>
+                    <input class="slider" type="range"  min="1" max="100" value="16">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
