@@ -1,4 +1,3 @@
-d
 function fillColor(e){
     if(e.buttons != 1) return
     //Set the background color of the div depending on the mode
