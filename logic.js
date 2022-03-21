@@ -8,6 +8,8 @@ function fillColor(e){
         case 'rainbow':
             this.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16)
             break;
+        case 'eraser':
+            this.style.backgroundColor = 'white'
     } 
 }
 function changeColor(){
@@ -20,12 +22,18 @@ function changeMode(e){
     if (this.dataset.mode == 'normal'){
         normalButton.classList.add('selected')
         rainbowButton.classList.remove('selected')
+        eraserButton.classList.remove('selected')
     }
-    else {
+    else if(this.dataset.mode == 'rainbow'){
         rainbowButton.classList.add('selected')
         normalButton.classList.remove('selected')
+        eraserButton.classList.remove('selected')
     }
-
+    else {
+        eraserButton.classList.add('selected')
+        normalButton.classList.remove('selected')
+        rainbowButton.classList.remove('selected')
+    }
 }
 
 function clear(e){
@@ -62,7 +70,9 @@ const grid = document.querySelector('.sketch')
 const clearButton = document.querySelector('.clear')
 const normalButton = document.querySelector('.normal')
 const rainbowButton = document.querySelector('.rainbow')
+const eraserButton = document.querySelector('.eraser')
 
+eraserButton.addEventListener('click', changeMode)
 rainbowButton.addEventListener('click', changeMode)
 normalButton.addEventListener('click', changeMode)
 colorPalette.addEventListener('change', changeColor)

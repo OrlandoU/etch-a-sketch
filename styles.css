@@ -58,7 +58,7 @@ body {
     border-radius: 15px;
     color: rgb(212, 212, 212);
     width: fit-content;
-    margin: 15px 0;
+    margin: 15px 0 5px 0;
     font-size: 20px;
     padding: 20px;
     border: none;
@@ -73,8 +73,9 @@ body {
 }
 
 .slider {
+    cursor: pointer;
     -webkit-appearance: slider-vertical; /* Chromium */
-    height: 200px;
+    height: auto;
     padding: 0 5px;
     border-radius: 15px;
     background: #ccc;
@@ -95,8 +96,8 @@ button {
     padding: 20px;
     border: none;
     box-shadow: 2px 2px 8px 2px black;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
     transition: all 0.2s ease;
 }
 button:hover{
@@ -109,12 +110,13 @@ button:active{
     animation-duration: 1.5s;
 }
 label {
+    cursor: pointer;
     border-radius: 0% 100% 100% 100%;
     width: 100px;
     height: 100px;
     position: relative;
     backdrop-filter: blur(3px);
-    box-shadow: 1px 1px 4px 1px rgb(172, 172, 172);
+    box-shadow: 2px 2px 8px 1px;
 }
 @keyframes clickButton {
     from {transform: scale(1);}
