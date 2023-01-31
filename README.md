@@ -3,7 +3,7 @@ A simple web app that simulates a classic Etch-a-Sketch toy, built as part of th
 
 ## Getting Started
 - Prerequisites: web browser
-- Installation: `git clone https://github.com/<username>/etch-a-sketch.git` and open `index.html` in browser
+- Installation: `git clone https://github.com/OrlandoU/etch-a-sketch.git` and open `index.html` in browser
 
 ## Features
 - Draw by moving the cursor over the screen
